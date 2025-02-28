@@ -1,5 +1,21 @@
+using Data.DataContext;
+using Data.Repositories;
+using Domain.Interfaces.Data;
+using Domain.Interfaces.Services;
+using Domain.Services;
+using Microsoft.EntityFrameworkCore;
 using Project_GraphQL.Queries;
+using System;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        b => b.MigrationsAssembly("Project_GraphQL")));
+
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+builder.Services.AddScoped<IBookRepository, BookRespository>();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddGraphQLServer()
     .AddQueryType<BookQuery>();
 
@@ -10,7 +26,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

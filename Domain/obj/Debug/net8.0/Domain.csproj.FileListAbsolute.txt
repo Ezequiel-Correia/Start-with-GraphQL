@@ -10,3 +10,6 @@ C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.dll
 C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Files cSharp\Project_GraphQL\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
