@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Files cSharp\\Project_GraphQL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files csharp\\project_graphql\\project_graphql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files csharp\\project_graphql\\project_graphql\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D52615B-30BB-4769-A68C-6554E67187B8}|Domain\\Domain.csproj|c:\\files csharp\\project_graphql\\domain\\entities\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D52615B-30BB-4769-A68C-6554E67187B8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files csharp\\project_graphql\\project_graphql\\queries\\bookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\queries\\bookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D52615B-30BB-4769-A68C-6554E67187B8}|Domain\\Domain.csproj|c:\\files csharp\\project_graphql\\domain\\entities\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D52615B-30BB-4769-A68C-6554E67187B8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files csharp\\project_graphql\\project_graphql\\project_graphql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\project_graphql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files csharp\\project_graphql\\project_graphql\\project_graphql.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\project_graphql.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Project_GraphQL\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-27T17:43:09.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookQuery.cs",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Queries\\BookQuery.cs",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Queries\\BookQuery.cs",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Queries\\BookQuery.cs",
+              "RelativeToolTip": "Project_GraphQL\\Queries\\BookQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:24:02.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Entities\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Models\\Author.cs",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Entities\\Models\\Author.cs",
+              "RelativeToolTip": "Domain\\Entities\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:16:27.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Entities\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Models\\Book.cs",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Entities\\Models\\Book.cs",
+              "RelativeToolTip": "Domain\\Entities\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:12:46.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Project_GraphQL.csproj",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Project_GraphQL.csproj",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Project_GraphQL.csproj",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Project_GraphQL.csproj",
+              "RelativeToolTip": "Project_GraphQL\\Project_GraphQL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-27T17:03:35.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Program.cs",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Program.cs",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Program.cs",
+              "RelativeToolTip": "Project_GraphQL\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:02:35.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Project_GraphQL.http",
+              "DocumentMoniker": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Project_GraphQL.http",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Project_GraphQL.http",
+              "ToolTip": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Project_GraphQL.http",
+              "RelativeToolTip": "Project_GraphQL\\Project_GraphQL.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-27T17:02:27.702Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

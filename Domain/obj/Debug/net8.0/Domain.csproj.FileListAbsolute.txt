@@ -1,0 +1,12 @@
+C:\Files cSharp\Project_GraphQL\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Files cSharp\Project_GraphQL\Domain\bin\Debug\net8.0\Domain.dll
+C:\Files cSharp\Project_GraphQL\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.dll
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Files cSharp\Project_GraphQL\Domain\obj\Debug\net8.0\ref\Domain.dll
