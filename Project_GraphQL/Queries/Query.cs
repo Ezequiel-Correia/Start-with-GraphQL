@@ -4,7 +4,8 @@ using System.Reflection;
 using Domain.Interfaces.Services;
 namespace Project_GraphQL.Queries
 {
-    public class BookQuery
+    [ExtendObjectType(OperationTypeNames.Query)]
+    public class Query
     {
 
         public Task<IEnumerable<Book>> GetAllBooks([Service]
