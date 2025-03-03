@@ -7,7 +7,7 @@ namespace Project_GraphQL.Queries
     [ExtendObjectType(OperationTypeNames.Query)]
     public class Query
     {
-
+        [GraphQLName("allBooks")]
         public Task<IEnumerable<Book>> GetAllBooks([Service]
         IBookService bookService) => bookService.GetAll();
 

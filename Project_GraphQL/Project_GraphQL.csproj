@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Subscription\**" />
+    <Content Remove="Subscription\**" />
+    <EmbeddedResource Remove="Subscription\**" />
+    <None Remove="Subscription\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HotChocolate" Version="15.0.3" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="15.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
@@ -26,10 +33,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Subscription\" />
   </ItemGroup>
 
 </Project>
