@@ -28,5 +28,13 @@ namespace Domain.Services
         {
             await _authorRepository.AddAuthor(author);
         }
+        public async Task UpdateAuthor(int id, Author author)
+        {
+            await _authorRepository.UpdateAuthor(id, author);
+        }
+        public async Task DeleteAuthor(int id)
+        {
+            await _authorRepository.DeleteAuthor(id);
+        }
     }
 }

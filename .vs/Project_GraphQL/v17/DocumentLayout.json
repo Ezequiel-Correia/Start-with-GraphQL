@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Files .Net\\Start-with-GraphQL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files .net\\start-with-graphql\\project_graphql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files .net\\start-with-graphql\\project_graphql\\inputs\\createauthorinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\inputs\\createauthorinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files .net\\start-with-graphql\\project_graphql\\mutations\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\mutations\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|c:\\files .net\\start-with-graphql\\project_graphql\\inputs\\createbookinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFAF6385-1C92-4647-A394-55570B185F36}|Project_GraphQL\\Project_GraphQL.csproj|solutionrelative:project_graphql\\inputs\\createbookinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Program.cs",
-              "RelativeDocumentMoniker": "Project_GraphQL\\Program.cs",
-              "ToolTip": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Program.cs",
-              "RelativeToolTip": "Project_GraphQL\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACQAAAAkAAAAAAAAAA==",
+              "Title": "CreateAuthorInput.cs",
+              "DocumentMoniker": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Inputs\\CreateAuthorInput.cs",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Inputs\\CreateAuthorInput.cs",
+              "ToolTip": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Inputs\\CreateAuthorInput.cs",
+              "RelativeToolTip": "Project_GraphQL\\Inputs\\CreateAuthorInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T00:54:40.85Z",
+              "WhenOpened": "2025-03-03T16:46:07.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreatebookInput.cs",
+              "DocumentMoniker": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Inputs\\CreatebookInput.cs",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Inputs\\CreatebookInput.cs",
+              "ToolTip": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Inputs\\CreatebookInput.cs",
+              "RelativeToolTip": "Project_GraphQL\\Inputs\\CreatebookInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T13:02:03.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20250303000015_modificando prop..cs",
-              "DocumentMoniker": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs",
-              "RelativeDocumentMoniker": "Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs",
-              "ToolTip": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs",
-              "RelativeToolTip": "Project_GraphQL\\Migrations\\20250303000015_modificando prop..cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "Title": "Mutation.cs",
+              "DocumentMoniker": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Mutations\\Mutation.cs",
+              "RelativeDocumentMoniker": "Project_GraphQL\\Mutations\\Mutation.cs",
+              "ToolTip": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Mutations\\Mutation.cs",
+              "RelativeToolTip": "Project_GraphQL\\Mutations\\Mutation.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T00:00:16.046Z",
+              "WhenOpened": "2025-03-03T12:43:13.706Z",
               "EditorCaption": ""
             }
           ]

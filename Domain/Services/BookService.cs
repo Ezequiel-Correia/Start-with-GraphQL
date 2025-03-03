@@ -30,5 +30,13 @@ namespace Domain.Services
         {
             await _bookRepostory.AddBook(book);
         }
+        public async Task UpdateBook(int id, Book book)
+        {
+            await _bookRepostory.UpdateBook(id, book);
+        }
+        public async Task DeleteBook(int id)
+        {
+            await _bookRepostory.DeleteBook(id);
+        }
     }
 }

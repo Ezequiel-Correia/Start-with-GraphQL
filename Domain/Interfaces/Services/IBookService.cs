@@ -12,5 +12,7 @@ namespace Domain.Interfaces.Services
         Task<IEnumerable<Book>> GetAll();
         Task<Book> GetById(int id);
         Task AddBook(Book book);
+        Task UpdateBook(int id,Book book);
+        Task DeleteBook(int id);
     }
 }

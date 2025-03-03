@@ -12,5 +12,7 @@ namespace Domain.Interfaces.Services
         Task<IEnumerable<Author>> GetAll();
         Task<Author> GetById(int id);
         Task AddAuthor(Author author);
+        Task UpdateAuthor(int id, Author author);
+        Task DeleteAuthor(int id);
     }
 }

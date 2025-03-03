@@ -38,7 +38,56 @@ namespace Project_GraphQL.Mutations
             await bookService.AddBook(book);
             return book; 
         }
-       
+        public async Task<Author> UpdateAuthor([Service] IAuthorService authorService, int id, CreateAuthorInput author)
+        {
+            var existingAuthor = await authorService.GetById(id);
+            if (existingAuthor == null)
+            {
+                throw new Exception("Autor inexistente !");
+            }
+
+            existingAuthor.Name = author.Name;
+            existingAuthor.Age = author.Age;
+            existingAuthor.Cpf = author.Cpf;
+
+            await authorService.UpdateAuthor(id, existingAuthor);
+            return existingAuthor;
+
+        }
+        public async Task<bool> DeleteAuthor([Service] IAuthorService authorService, int id)
+        {
+            var author = authorService.GetById(id);
+            if(author == null)
+            {
+                throw new Exception("Autor inexistente !");
+            }
+            await authorService.DeleteAuthor(id);
+            return true;
+        }
+        public async Task<Book> UpdateBook([Service] IBookService bookService, int id, CreatebookInput book)
+        {
+            var existingBook = await bookService.GetById(id);
+            if (existingBook == null)
+            {
+                throw new Exception("Livro inexistente !");
+            }
+            existingBook.Title = book.Title;
+            existingBook.Pages = book.Pages;
+            existingBook.AuthorId = book.AuthorId;
+            await bookService.UpdateBook(id, existingBook);
+            return existingBook;
+
+        }
+        public async Task<bool> DeleteBook([Service] IBookService bookService, int id)
+        {
+            var book = bookService.GetById(id);
+            if(book == null)
+            {
+                throw new Exception("Livro inexistente !");
+            }
+            await bookService.DeleteBook(id);
+            return true;
+        }
     }
 }
 
