@@ -10,8 +10,10 @@ namespace Project_GraphQL.GraphQL.Queries
     public class Query
     {
         [GraphQLName("allBooks")]
-        public Task<IEnumerable<Book>> GetAllBooks([Service]
-        IBookService bookService) => bookService.GetAll();
+        public async Task<IEnumerable<Book>> GetAllBooks([Service] IBookService bookService)
+        {
+            return await bookService.GetAll();
+        }
 
         [GraphQLName("getBookById")]
         public async Task<Book> GetBookById([Service] IBookService bookService, int id)
@@ -25,8 +27,11 @@ namespace Project_GraphQL.GraphQL.Queries
 
         }
         [GraphQLName("allAuthors")]
-        public Task<IEnumerable<Author>> GetAllAuthors([Service]
-        IAuthorService authorService) => authorService.GetAll();
+        public async Task<IEnumerable<Author>> GetAllAuthors([Service]
+        IAuthorService authorService)
+        {   
+            return await  authorService.GetAll();
+        }
         [GraphQLName("getAuthorById")]
         public async Task<Author> GetAuthorById([Service] IAuthorService authorService, int id)
         {
