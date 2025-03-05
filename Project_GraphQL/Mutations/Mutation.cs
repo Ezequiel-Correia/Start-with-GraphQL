@@ -13,7 +13,7 @@ namespace Project_GraphQL.Mutations
             var author = new Author
             {
                 Name = input.Name,
-                Age = input.Age,
+                BirthDate = input.BirthDate,
                 Cpf = input.Cpf
             };
             await authorService.AddAuthor(author);
@@ -32,7 +32,9 @@ namespace Project_GraphQL.Mutations
             {
                 Title = input.Title,
                 Pages = input.Pages,
-                AuthorId = input.AuthorId
+                AuthorId = input.AuthorId,
+                DateCreated = input.DateCreated
+                
             };
 
             await bookService.AddBook(book);
@@ -47,7 +49,7 @@ namespace Project_GraphQL.Mutations
             }
 
             existingAuthor.Name = author.Name;
-            existingAuthor.Age = author.Age;
+            existingAuthor.BirthDate = author.BirthDate;
             existingAuthor.Cpf = author.Cpf;
 
             await authorService.UpdateAuthor(id, existingAuthor);
@@ -63,17 +65,18 @@ namespace Project_GraphQL.Mutations
             }
             await authorService.DeleteAuthor(id);
             return true;
-        }
-        public async Task<Book> UpdateBook([Service] IBookService bookService, int id, CreatebookInput book)
+        } 
+        public async Task<Book> UpdateBook([Service] IBookService bookService, int id, UpdateBookInput book)
         {
             var existingBook = await bookService.GetById(id);
             if (existingBook == null)
             {
                 throw new Exception("Livro inexistente !");
             }
-            existingBook.Title = book.Title;
-            existingBook.Pages = book.Pages;
-            existingBook.AuthorId = book.AuthorId;
+            existingBook.Title = book.Title ?? existingBook.Title; 
+            existingBook.Pages = book.Pages ?? existingBook.Pages; 
+            existingBook.AuthorId = book.AuthorId ?? existingBook.AuthorId; 
+            existingBook.DateCreated = book.DateCreated ?? existingBook.DateCreated;
             await bookService.UpdateBook(id, existingBook);
             return existingBook;
 

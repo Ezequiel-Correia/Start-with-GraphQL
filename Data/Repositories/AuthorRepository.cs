@@ -39,7 +39,7 @@ namespace Data.Repositories
                 throw new Exception("Autor inexistente !");
             }
             existingAuthor.Name = author.Name;
-            existingAuthor.Age = author.Age;
+            existingAuthor.BirthDate = author.BirthDate;
             existingAuthor.Cpf = author.Cpf;
 
             await _context.SaveChangesAsync();

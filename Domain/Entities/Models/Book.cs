@@ -13,5 +13,6 @@ namespace Domain.Entities.Models
         public int Pages { get; set; }
         public int? AuthorId { get; set; }
         public Author? Author { get; set; }
+        public DateTime? DateCreated { get; set; }
     }
 }

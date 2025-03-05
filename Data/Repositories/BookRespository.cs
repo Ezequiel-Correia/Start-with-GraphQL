@@ -42,6 +42,7 @@ namespace Data.Repositories
             existingBook.Title = book.Title;
             existingBook.Pages = book.Pages;
             existingBook.AuthorId = book.AuthorId;
+            existingBook.DateCreated = book.DateCreated;
             
             await _context.SaveChangesAsync();
         }
