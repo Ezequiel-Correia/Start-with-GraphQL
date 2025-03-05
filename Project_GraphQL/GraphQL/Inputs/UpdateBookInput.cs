@@ -1,4 +1,4 @@
-﻿namespace Project_GraphQL.Inputs
+﻿namespace Project_GraphQL.GraphQL.Inputs
 {
     public class UpdateBookInput
     {
@@ -6,5 +6,6 @@
         public int? Pages { get; set; }
         public int? AuthorId { get; set; }
         public DateTime? DateCreated { get; set; }
+        public int? CategoryId { get; set; }
     }
 }

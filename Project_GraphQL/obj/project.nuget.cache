@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T3EFfAu0U40=",
+  "dgSpecHash": "k75c5Rqs0Tg=",
   "success": true,
-  "projectFilePath": "C:\\Files .Net\\Start-with-GraphQL\\Project_GraphQL\\Project_GraphQL.csproj",
+  "projectFilePath": "C:\\Files cSharp\\Project_GraphQL\\Project_GraphQL\\Project_GraphQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ezequiel Correia\\.nuget\\packages\\chillicream.nitro.app\\23.0.4\\chillicream.nitro.app.23.0.4.nupkg.sha512",
     "C:\\Users\\Ezequiel Correia\\.nuget\\packages\\greendonut\\15.0.3\\greendonut.15.0.3.nupkg.sha512",

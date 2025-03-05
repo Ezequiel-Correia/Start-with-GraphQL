@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Files .Net\\Start-with-GraphQL\\Domain\\Domain.csproj": {}
+    "C:\\Files cSharp\\Project_GraphQL\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Files .Net\\Start-with-GraphQL\\Domain\\Domain.csproj": {
+    "C:\\Files cSharp\\Project_GraphQL\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Files .Net\\Start-with-GraphQL\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Files .Net\\Start-with-GraphQL\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Files cSharp\\Project_GraphQL\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Ezequiel Correia\\.nuget\\packages\\",
-        "outputPath": "C:\\Files .Net\\Start-with-GraphQL\\Domain\\obj\\",
+        "outputPath": "C:\\Files cSharp\\Project_GraphQL\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -96,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

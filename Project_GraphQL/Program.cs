@@ -4,8 +4,8 @@ using Domain.Interfaces.Data;
 using Domain.Interfaces.Services;
 using Domain.Services;
 using Microsoft.EntityFrameworkCore;
-using Project_GraphQL.Mutations;
-using Project_GraphQL.Queries;
+using Project_GraphQL.GraphQL.Mutations;
+using Project_GraphQL.GraphQL.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +18,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<IBookRepository, BookRespository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 builder.Services.AddGraphQLServer()

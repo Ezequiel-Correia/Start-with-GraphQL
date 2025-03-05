@@ -47,6 +47,9 @@ namespace Project_GraphQL.Migrations
                     b.Property<int?>("AuthorId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime?>("DateCreated")
                         .HasColumnType("TEXT");
 
@@ -61,7 +64,27 @@ namespace Project_GraphQL.Migrations
 
                     b.HasIndex("AuthorId");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Domain.Entities.Models.Book", b =>
@@ -71,10 +94,22 @@ namespace Project_GraphQL.Migrations
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade);
 
+                    b.HasOne("Domain.Entities.Models.Category", "Category")
+                        .WithMany("Books")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.Navigation("Author");
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Domain.Entities.Models.Author", b =>
+                {
+                    b.Navigation("Books");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Models.Category", b =>
                 {
                     b.Navigation("Books");
                 });

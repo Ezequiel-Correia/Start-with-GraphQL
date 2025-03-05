@@ -20,11 +20,11 @@ namespace Data.Repositories
         }
         public async Task<IEnumerable<Author>> GetAll()
         {
-            return await _context.Authors.Include(x => x.Books).ToListAsync();
+            return await _context.Authors.Include(x => x.Books).ThenInclude(x => x.Category).ToListAsync();
         }
         public async Task<Author> GetById(int id)
         {
-            return await _context.Authors.Include(x => x.Books).FirstOrDefaultAsync(x => x.AuthorId == id);
+            return await _context.Authors.Include(x => x.Books).ThenInclude(x => x.Category).FirstOrDefaultAsync(x => x.AuthorId == id);
         }
         public async Task AddAuthor(Author author)
         {

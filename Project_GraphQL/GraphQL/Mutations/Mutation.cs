@@ -1,8 +1,8 @@
 ﻿using Domain.Entities.Models;
 using Domain.Interfaces.Services;
-using Project_GraphQL.Inputs;
+using Project_GraphQL.GraphQL.Inputs;
 
-namespace Project_GraphQL.Mutations
+namespace Project_GraphQL.GraphQL.Mutations
 {
     public class Mutation
     {
@@ -22,25 +22,32 @@ namespace Project_GraphQL.Mutations
         public async Task<Book> AddBook(
           [Service] IBookService bookService, IAuthorService authorservice, CreatebookInput input)
         {
-            var author = await authorservice.GetById(input.AuthorId);
-
-            if (author == null)
-            {
-                throw new Exception("Autor não encontrado !");
-            }
             var book = new Book
             {
                 Title = input.Title,
                 Pages = input.Pages,
                 AuthorId = input.AuthorId,
-                DateCreated = input.DateCreated
+                DateCreated = input.DateCreated,
+                CategoryId = input.CategoryId
                 
             };
 
             await bookService.AddBook(book);
             return book; 
         }
-        public async Task<Author> UpdateAuthor([Service] IAuthorService authorService, int id, CreateAuthorInput author)
+        public async Task<Category> AddCategory(
+            [Service] ICategoryService categoryService, CreateCategoryInput categoryInput)
+        {
+            var category = new Category
+            {
+                Description = categoryInput.Description,
+
+            };
+            await categoryService.AddCategory(category);
+            return category;
+        }
+        
+        public async Task<Author> UpdateAuthor([Service] IAuthorService authorService, int id, UpdateAuthorInput author)
         {
             var existingAuthor = await authorService.GetById(id);
             if (existingAuthor == null)
@@ -48,13 +55,25 @@ namespace Project_GraphQL.Mutations
                 throw new Exception("Autor inexistente !");
             }
 
-            existingAuthor.Name = author.Name;
-            existingAuthor.BirthDate = author.BirthDate;
-            existingAuthor.Cpf = author.Cpf;
+            existingAuthor.Name = author.Name ?? existingAuthor.Name;
+            existingAuthor.BirthDate = author.BirthDate ?? existingAuthor.BirthDate;
+            existingAuthor.Cpf = author.Cpf ?? existingAuthor.Cpf;
 
             await authorService.UpdateAuthor(id, existingAuthor);
             return existingAuthor;
 
+        }
+        public async Task<Category> UpdateCategory([Service] ICategoryService categoryService, int id, UpdateCategoryInput categoryInput)
+        {
+            var existingCategory = await categoryService.GetCategoryById(id);
+            if(existingCategory == null)
+            {
+                throw new Exception("Categoria Inexistente !");
+
+            }
+            existingCategory.Description = categoryInput.Description ?? existingCategory.Description;
+            await categoryService.UpdateCategory(id, existingCategory);
+            return existingCategory;
         }
         public async Task<bool> DeleteAuthor([Service] IAuthorService authorService, int id)
         {
@@ -66,6 +85,16 @@ namespace Project_GraphQL.Mutations
             await authorService.DeleteAuthor(id);
             return true;
         } 
+        public async Task<bool> DeleteCategory([Service] ICategoryService categoryService, int id)
+        {
+            var category = categoryService.GetCategoryById(id);
+            if(category == null)
+            {
+                throw new Exception("Categoria inexistente !");
+            }
+            await categoryService.DeleteCategory(id);
+            return true;
+        }
         public async Task<Book> UpdateBook([Service] IBookService bookService, int id, UpdateBookInput book)
         {
             var existingBook = await bookService.GetById(id);
@@ -77,6 +106,7 @@ namespace Project_GraphQL.Mutations
             existingBook.Pages = book.Pages ?? existingBook.Pages; 
             existingBook.AuthorId = book.AuthorId ?? existingBook.AuthorId; 
             existingBook.DateCreated = book.DateCreated ?? existingBook.DateCreated;
+            existingBook.CategoryId = book.CategoryId ?? existingBook.CategoryId;
             await bookService.UpdateBook(id, existingBook);
             return existingBook;
 
@@ -91,6 +121,7 @@ namespace Project_GraphQL.Mutations
             await bookService.DeleteBook(id);
             return true;
         }
+       
     }
 }
 

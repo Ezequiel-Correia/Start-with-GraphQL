@@ -1,4 +1,4 @@
-﻿namespace Project_GraphQL.Inputs
+﻿namespace Project_GraphQL.GraphQL.Inputs
 {
     public class UpdateAuthorInput
     {
